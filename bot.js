@@ -22,7 +22,7 @@ client.on('message', (msg) => {
   }
 
   if (msg.content === 'hi') {
-    msg.attachments('Hello');
+    msg.attachments = 'Hello';
   }
 
   if (msg.content === `${BOT_PREFIX}${MOD_ME_COMMAND}`) {
