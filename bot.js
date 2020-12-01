@@ -21,7 +21,7 @@ client.on('message', (msg) => {
     msg.react('♥️');
   }
 
-  if (msg.content.includes('hi')) {
+  if (msg.content === 'hi') {
     msg.attachments('Hello');
   }
 
