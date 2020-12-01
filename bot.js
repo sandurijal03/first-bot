@@ -21,6 +21,10 @@ client.on('message', (msg) => {
     msg.react('♥️');
   }
 
+  if (msg.content.includes('hi')) {
+    msg.channel.send('Hello');
+  }
+
   if (msg.content === `${BOT_PREFIX}${MOD_ME_COMMAND}`) {
     modUser(msg.member);
   }
